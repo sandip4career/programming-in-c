@@ -1,13 +1,14 @@
 #include<stdio.h>
-#include<conio.h>
 
 int main()
 {
-    int x,a,b;
+    int x,y,max;
     printf("Enter two number:");
-    scanf("%d%d",&a,&b);
+    scanf("%d %d",&x,&y);
 
-    x = a>b?a:b;
-    printf("%d is greater",x);
+    max = (x>y)?x:y;
+
+    printf("%d is greater",max);
+
     return 0;
 }
