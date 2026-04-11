@@ -6,7 +6,7 @@ int main()
 {
     int i;
     FILE *fp;
-    char s[15] = "Hello world";
+    char s[15];
     fp =fopen("f1.txt","w");
 
     if(fp==NULL)
@@ -14,6 +14,8 @@ int main()
         printf("file cannot open");
         exit(1);
     }
+    printf("Enter a string:");
+    gets(s);
 
     for(i=0;i<strlen(s);i++)
     {
