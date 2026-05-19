@@ -2,9 +2,9 @@
 
 int main()
 {
-    int *p; // wild pointer or uninitialized pointer
+    int *p;   // wild pointer
 
-    printf("%d", p);
+    printf("%d", *p); // undefined behavior
 
     return 0;
 }
