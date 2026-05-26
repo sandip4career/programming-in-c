@@ -1,7 +1,8 @@
 #include<stdio.h>
-#include<conio.h>
-void main()
+
+int main()
 {
+
     int i,j;
     for(i=1;i<=5;i++)
     {
@@ -10,13 +11,13 @@ void main()
             if(j<=i)
             {
                 printf("*");
-            }else
+            }
+            else
             {
                 printf(" ");
             }
-
         }
         printf("\n");
     }
-    getch();
+    return 0;
 }
